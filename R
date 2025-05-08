@@ -1,0 +1,9 @@
+car_data <- read.csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mpg.csv")
+
+hist(car_data$mpg,
+     breaks = 20,
+     col = "lightgreen",
+     main = "Car fuel efficiency (MPG)",
+     xlab = "MPG",
+     xlab = "Frequency",
+     border = "white")
