@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mpg.csv"
+data = pd.read_csv(url)
+
+plt.hist(data['mpg'].dropna(), bins=20, color='lightgreen' , edgecolor='white')
+plt.title(" Car fuel Effieciency (MPG)")
+plt.xlabel("MPG")
+plt.ylabel("Frequency")
+plt.show()
+
+
+  
